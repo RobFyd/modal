@@ -11,7 +11,7 @@ function App() {
       <h1>Witaj w lekcji o React Portal!</h1>
       <Main onModalOpenClick={() => setIsModalOpen(true)} />
       <footer>zrozumiecReact.pl ©</footer>
-      {isModalOpen && <Modal setIsModalOpen={setIsModalOpen} />}
+      {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} />}
     </>
   );
 }
